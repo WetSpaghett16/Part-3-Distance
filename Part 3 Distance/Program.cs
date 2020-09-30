@@ -6,24 +6,28 @@ namespace Part_3_Distance
     {
         static void Main(string[] args)
         {
-            int number1;
-            int number2;
-            int number3;
+            double number1;
+            double number2;
+            double number3;
+            double average;
 
-            Console.WriteLine("Enter Custom Race Results in Km");
+            Console.WriteLine("Press Enter to fill out custom race results in Km");
             Console.ReadLine();
 
             Console.WriteLine("Declare your first distance: ");
-            number1 = Convert.ToInt32(Console.ReadLine());
+            number1 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Declare your second distance: ");
-            number2 = Convert.ToInt32(Console.ReadLine());
+            number2 = Convert.ToDouble(Console.ReadLine());
 
 
             Console.WriteLine("Declare your third distance: ");
-            number3 = Convert.ToInt32(Console.ReadLine());
-
-
+            number3 = Convert.ToDouble(Console.ReadLine());
+            
+            average =(number1 + number2 + number3) / 3;
+           
+            Console.WriteLine("Average is: " + average);
+            Console.ReadLine();
 
         }
     }
